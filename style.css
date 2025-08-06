@@ -25,11 +25,13 @@ body {
 .slider-container .slider .slide {
   position: relative;
   width: 100%;
+  display: none;
 }
 .slider-container .slider .slide img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0;
 }
 .slider-container .slider .slide .text-overlay {
   position: absolute;
@@ -37,10 +39,21 @@ body {
   left: 20%;
   color: #fff;
   text-align: center;
+  opacity: 0.1;
 }
 .slider-container .slider .slide .text-overlay h2 {
   font-size: 6rem;
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+.slider-container .slider .slide.active {
+  display: block;
+}
+.slider-container .slider .slide.active img {
+  opacity: 1;
+  /* Set opacity to 1 when the slide is active */
+}
+.slider-container .slider .slide.active .text-overlay {
+  opacity: 1;
 }
 .slider-container .slider-pagination {
   position: absolute;
