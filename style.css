@@ -14,5 +14,53 @@ body {
 /**********************end of styles*********************/
 .slider-container {
   position: relative;
+  /*slider pagination*/
+}
+.slider-container .slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* end of slider pagination*/
+}
+.slider-container .slider .slide {
+  position: relative;
+  width: 100%;
+}
+.slider-container .slider .slide img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider-container .slider .slide .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  color: #fff;
+  text-align: center;
+}
+.slider-container .slider .slide .text-overlay h2 {
+  font-size: 6rem;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+.slider-container .slider-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-container .slider-pagination .dot {
+  width: 20px;
+  height: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.slider-container .slider-pagination .dot.active {
+  background-color: #333;
 }
 /*# sourceMappingURL=style.css.map */
