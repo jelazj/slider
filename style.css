@@ -57,7 +57,7 @@ body {
 }
 .slider-container .slider-pagination {
   position: absolute;
-  bottom: 10px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -75,5 +75,4 @@ body {
 }
 .slider-container .slider-pagination .dot.active {
   background-color: #333;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
